@@ -1,0 +1,366 @@
+/* start the head */
+:root {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Tahoma,sans-serif;
+}
+
+.head {
+  padding: 20px 0;
+  border-bottom: 1px solid #f4cdcd;
+  -webkit-box-shadow: 0 10px 10px 0 #f4cdcd;
+          box-shadow: 0 10px 10px 0 #f4cdcd;
+}
+.head .brand h1 {
+  margin: 0;
+  font-weight: normal;
+}
+.head .brand h1 a {
+  color: black;
+  display: block;
+}
+.head .link {
+  background-color: tomato;
+  border-radius: 10px;
+}
+.head .link ul li:not(:last-of-type) a {
+  color: white;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.head .link ul li:not(:last-of-type) a:hover, .head .link ul li:not(:last-of-type) a.active {
+  color: #f4cdcd;
+}
+@media (max-width: 992px) {
+  .head .link {
+    display: none;
+  }
+}
+.head .bar {
+  padding: 10px 0;
+}
+.head .bar i {
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .head .bar {
+    display: block;
+  }
+}
+
+.link2 {
+  position: absolute;
+  width: 200px;
+  background-color: red;
+  z-index: 9999;
+  right: -200px;
+  padding-top: 10px;
+  display: none;
+}
+.link2 ul li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.link2 ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: rgba(255, 99, 71, 0.8);
+}
+.link2 ul li a:hover {
+  background-color: tomato;
+}
+
+/* end the head */
+/* start the slider */
+.slid {
+  margin-top: 50px;
+}
+.slid q {
+  font-style: italic;
+}
+.slid .img {
+  margin: 10px 0;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+.slid .img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+.slid .img img.active {
+  z-index: 5;
+  right: 0;
+}
+.slid .points li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #DDD;
+  border-radius: 50%;
+  border: 3px solid #DDD;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.slid .points li.active {
+  border: 3px solid black;
+}
+
+/* end the slider */
+/* srat the services */
+.service .button {
+  position: relative;
+  padding: 20px;
+}
+.service .button button {
+  padding: 8px 50px;
+  text-transform: uppercase;
+  background-color: tomato;
+  border-color: tomato;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.service .button span {
+  height: 3px;
+  background-color: #DDD;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.service .ser {
+  width: 33.3333333333%;
+}
+.service .ser:not(:nth-of-type(4)) {
+  padding: 0 10px;
+}
+.service .ser p span {
+  color: rebeccapurple;
+  cursor: pointer;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .service .ser {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* end the services */
+/* start the our players */
+.our-players .button {
+  position: relative;
+  padding: 20px;
+}
+.our-players .button button {
+  padding: 8px 50px;
+  text-transform: uppercase;
+  background-color: tomato;
+  border-color: tomato;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.our-players .button span {
+  height: 3px;
+  background-color: #DDD;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.our-players .player {
+  width: 25%;
+  padding: 0 10px;
+}
+.our-players .player img {
+  max-width: 100%;
+}
+.our-players .player h3 span {
+  display: inline-block;
+}
+.our-players .player p span {
+  color: rebeccapurple;
+  cursor: pointer;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .our-players .player {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* end the our players */
+/* start lorem ipsum */
+.lorem-ipsum {
+  padding: 20px 0;
+}
+.lorem-ipsum .button {
+  position: relative;
+  padding: 20px;
+}
+.lorem-ipsum .button button {
+  padding: 8px 50px;
+  text-transform: uppercase;
+  background-color: tomato;
+  border-color: tomato;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.lorem-ipsum .button span {
+  height: 3px;
+  background-color: #DDD;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.lorem-ipsum .lorem {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+}
+.lorem-ipsum .lorem:nth-of-type(3) {
+  margin: 0 2%;
+}
+.lorem-ipsum .lorem img {
+  width: 100%;
+  display: block;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+.lorem-ipsum .lorem span {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30% 0;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 10;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.lorem-ipsum .lorem:hover img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+@media (max-width: 991px) {
+  .lorem-ipsum .lorem {
+    float: none;
+    width: 100%;
+  }
+  .lorem-ipsum .lorem:nth-of-type(3) {
+    margin: 2% 0;
+  }
+}
+
+/* end the our players */
+/* start the footer */
+.footer {
+  padding: 50px 0;
+  background-color: #E1E1E1;
+}
+.footer .serv {
+  width: 33.3333333333%;
+}
+.footer .serv > h4 {
+  color: #808080;
+}
+@media (max-width: 991px) {
+  .footer .serv {
+    float: none;
+    width: 100%;
+  }
+}
+.footer .blogs .blog {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.footer .blogs .blog img {
+  display: block;
+  width: 25%;
+  border: 10px solid #DDD;
+}
+.footer .blogs .blog div {
+  width: 71%;
+  margin: 0 2%;
+}
+.footer .blogs .blog div h4 {
+  margin: 0;
+  margin-top: 5px;
+  color: tomato;
+}
+.footer .addess div h4 {
+  color: #808080;
+}
+.footer .contact {
+  padding: 0 20px;
+}
+.footer .contact form input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.footer .contact form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+}
+.footer .contact form button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: tomato;
+  color: white;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer .contact form button span {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  z-index: -1;
+  border-right: 1px solid white;
+}
+@media (max-width: 991px) {
+  .footer .contact {
+    padding: 0;
+  }
+}
+
+/* end the footer */
+
+/*# sourceMappingURL=home.css.map */

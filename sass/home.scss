@@ -1,0 +1,461 @@
+/* start the head */
+:root
+{
+    overflow-x: hidden;
+}
+
+body
+{
+    font-family: Tahoma,sans-serif;
+}
+.head
+{
+    padding: 20px 0;   
+    border-bottom: 1px solid #f4cdcd;
+    box-shadow: 0 10px 10px 0 #f4cdcd;
+    .brand
+    {
+        h1
+        {
+          margin:0;  
+          font-weight: normal;
+            a
+            {
+                color: black;
+                display: block;
+            }
+        }
+    }  
+    .link
+    {
+        background-color: tomato;
+        border-radius: 10px;
+        ul
+        {
+          li:not(:last-of-type)
+            {
+                a
+                {
+                    color: white;
+                    display: block;
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                    transition: all .5s ease-in-out;
+                    &:hover,
+                    &.active
+                    {
+                        color: #f4cdcd;
+                    }
+                }
+            }
+        }
+        @media (max-width: 992px)
+        {
+            display: none;
+        }
+    }
+    .bar
+    {
+      padding: 10px 0; 
+      i
+      {
+       cursor: pointer;
+      }
+      @media(max-width: 991px)
+      {
+          display: block;
+      }
+    }
+}
+
+.link2
+{
+    position: absolute;
+    width: 200px;
+    background-color: red;
+    z-index: 9999;
+    right: -200px;
+    padding-top: 10px;
+    display: none;
+    ul
+    {
+        li
+        {
+            text-align: center;
+            margin-bottom: 10px;
+           a
+            {
+                display: block; 
+                padding: 10px;
+                color: white;
+                background-color: rgba(tomato, .8);
+                &:hover
+                {
+                  background-color: rgba(tomato, 1);  
+                } 
+            }
+        }
+    }
+}
+
+/* end the head */
+/* start the slider */
+
+.slid
+{
+    margin-top: 50px;
+    q
+    {
+        font-style: italic;
+    }
+    .img
+    {
+        margin: 10px 0;
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+        img
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            &.active
+            {
+                z-index: 5;
+                right: 0;
+            }
+        }
+    }
+    .points
+    {
+        li
+        {
+           display: inline-block;
+           width: 20px;
+           height: 20px;
+           background-color: #DDD;
+           border-radius: 50%;
+           border: 3px solid #DDD;   
+           transition: all .5s ease-in-out;
+           cursor: pointer;
+           &.active
+            {
+                border: 3px solid black;
+            }
+        }
+    }
+}
+
+/* end the slider */
+/* srat the services */
+
+.service
+{
+    .button
+    {
+        position: relative;
+        padding: 20px;
+        button
+        {
+            padding: 8px 50px;
+            text-transform: uppercase;
+            background-color: tomato;
+            border-color: tomato;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        span
+        {
+            height: 3px;
+            background-color: #DDD;
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+    .ser
+    {
+        width: (100%/3);
+        &:not(:nth-of-type(4))
+        {
+            padding: 0 10px;
+        }
+        p
+        {
+            span
+            {
+                color: rebeccapurple;
+                cursor: pointer;
+                display: inline-block;
+            }
+        }
+       @media(max-width: 991px)
+       {
+           float: none;
+           width: 100%;
+       }
+    }
+}
+
+/* end the services */
+/* start the our players */
+
+ .our-players
+{
+    .button
+    {
+        position: relative;
+        padding: 20px;
+        button
+        {
+            padding: 8px 50px;
+            text-transform: uppercase;
+            background-color: tomato;
+            border-color: tomato;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        span
+        {
+            height: 3px;
+            background-color: #DDD;
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+    .player
+    {
+        
+        width: (100%/4);
+        padding: 0 10px;
+        img 
+        {
+            max-width: 100%;
+        }
+        h3
+        {
+            span
+            {
+                display: inline-block;
+            }
+        }        
+        p
+        {
+            span
+            {
+                color: rebeccapurple;
+                cursor: pointer;
+                display: inline-block;
+            }
+        }
+        @media (max-width: 991px)
+        {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+/* end the our players */
+/* start lorem ipsum */
+
+ .lorem-ipsum
+{
+    padding: 20px 0;
+    .button
+    {
+        position: relative;
+        padding: 20px;
+        button
+        {
+            padding: 8px 50px;
+            text-transform: uppercase;
+            background-color: tomato;
+            border-color: tomato;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        span
+        {
+            height: 3px;
+            background-color: #DDD;
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+    .lorem
+    {
+        width: (96%/3);
+        position: relative;
+        overflow: hidden;
+        &:nth-of-type(3)
+        {
+            margin: 0 2%;
+        }
+        img
+        {
+            width: 100%;
+            display: block;
+            transition: all 1.5s ease-in-out;
+        }  
+        span
+        {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 30% 0;
+            position: absolute;
+            left: -100%;
+            top: 0;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            background-color: rgba(black,.5);
+        } 
+        &:hover img
+        {
+            transform: scale(1.4);
+        }
+        @media (max-width: 991px)
+        {
+            float: none;
+            width: 100%;
+            &:nth-of-type(3)
+            {
+                margin: 2% 0;
+            }
+        }
+    }
+}
+
+/* end the our players */
+/* start the footer */
+
+.footer
+{
+    padding: 50px 0;
+    background-color: #E1E1E1;
+    .serv
+    {
+        width: (100%/3);
+        >h4
+        {
+            color: #808080;
+        }
+        @media (max-width: 991px)
+        {
+            float: none;
+            width: 100%;
+        }
+    }
+    .blogs
+    {
+        .blog
+        {
+            overflow: hidden;
+            margin-bottom: 10px;
+            img
+            {
+                display: block;
+                width: 25%;
+                border: 10px solid #DDD;
+            }
+            div
+            {
+                width: 71%;
+                margin: 0 2%;
+                h4
+                {
+                    margin: 0;
+                    margin-top: 5px;
+                    color: tomato;
+                }
+            }
+        }
+    }
+    .addess
+    {
+        div
+        {
+            h4
+            {
+               color: #808080;  
+            }
+        }
+    }
+    .contact
+    {
+        padding: 0 20px;
+        form
+        {
+            input
+            {
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                border: none;
+                
+            }
+            textarea
+            {
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 10px;
+                border: none;
+            }
+            button
+            {
+                padding: 10px 15px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                border: none;
+                background-color: tomato;
+                color: white;
+                width: 120px;
+                text-transform: uppercase;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                span
+                {
+                    position: absolute;
+                    top: 0;
+                    left: -1px;
+                    bottom: 0;
+                    height: 100%;
+                    width: 0%;
+                    background-color: red;
+                    z-index: -1;
+                    border-right: 1px solid white;
+                }
+            }            
+        }
+        @media (max-width: 991px)
+        {
+            padding: 0;
+        }
+    }
+}
+
+/* end the footer */
+@mixin back($r){
+    background-color: rgba(black,$r);
+}
